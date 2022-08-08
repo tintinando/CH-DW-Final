@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+h1{
+    display:none;
+}
+
+body{
+    background-color:#a6a6a8;
+}
+
+nav{
+width:100%;
+height:200px;
+background-color: #cecece;
+padding-bottom: 15px;
+}
+
+.nav__logo{
+    width:100px;
+    height:100px;
+    display: inline;
+}
+
+.nav__logo img{
+    height:100%;
+}
+
+.nav__barra{
+    display: inline;
+}
+
+.nav__barra ul{
+    list-style-type: none;
+    width:50%;
+    display: inline;
+    position:relative;
+    top:-40px;
+    left:100px;
+}
+
+.nav__barra ul li{
+    display: inline;
+}
+
+.nav__barra ul li a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding:15px;
+    margin:10px;
+    display:inline;
+    width:60px;
+    font-family: roboto;
+    font-weight: 600;
+    text-align: center;
+
+}
+.nav__rsocial{
+    width:200px;
+    height:70px;
+    float: right;
+    position: relative;
+    top:100px;
+}
+
+.nav__rsocial img{
+    width:70px;
+    height: 70px;
+    margin:10px;
+}
+
+/* Main inicio */
+.main__banner{
+    width:90%;
+    margin-left: 5%;
+}
+
+.main__banner img{
+    width:100%;
+}
+
+.main__cards{
+    display: block;
+    width:70%;
+    margin-left: 15%;
+    height: 200px;
+}
+
+.main__card{
+    display: inline;
+}
+
+.main__card img{
+    height: 100%;
+}
+
+
+/* Pie de página */
+.footer{
+    background-color:#cecece;
+    width:100%;
+    height:200px;
+    display: block;
+    float: none;
+}
+
+.footer__navegar{
+    margin-top: 40px;
+    margin-left: 80px;
+    height:100%;
+    width:25%;
+    float:left;
+}
+
+.footer__navegar h3{
+    color:rgb(73, 17, 17);
+    font-family: roboto;
+}
+.footer__navegar ul{
+    list-style-type: none;
+}
+
+.footer__navegar ul li a, .footer__navegar a {
+    text-decoration: none;
+    color:black;
+    font-family: roboto;
+}
+
+/* Nosotros.html */
+.nosotros{
+    width:80%;
+    height:400px;
+    margin-left: 10%;
+    background-color: #b1e5f2;
+}
+
+.nosotros__texto{
+    width:50%;
+    float:left;
+    padding:20px;
+    font-family: cabin;
+}
+
+.nosotros__img{
+    height:100%;
+    float:left;
+}
+
+.nosotros__img img{
+    height:100%;
+}
+
+/* productos.html */
+.productos__cards{
+    width:100%;
+    float:left;
+    margin:10px;
+}
+
+.productos__cards h2{
+    font-family: cabin;
+}
+
+.productos__card{
+    float:left;
+    width:20%;
+    margin-left:10px;
+    font-family: cabin;
+}
+.productos__card img{
+    height:100%;
+    width:100%;
+}
+
+/* delivery.html */
+.delivery{
+    width:80%;
+    margin:15px;
+}
+
+.delivery h2,.delivery p{
+    font-family: cabin;
+}
+
+.delivery__card{
+   width:30%;
+   margin:20px;
+}
+
+.delivery__card img{
+    max-width:100%;
+    max-height: 100%;
+}
+

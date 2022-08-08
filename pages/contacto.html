@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav__logo"><a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+            <!-- Barra de navegación -->
+            <div class="nav__barra">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/productos.html">Menú</a></li>
+                    <li><a href="../pages/delivery.html">Delivery</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociales nav -->
+            <div class="nav__rsocial">
+                <a href="https://instagram.com"><img src="../img/instagram.png" alt="instagram"></a>
+                <a href="https://wa.me/541150500147"><img src="../img/whatsapp.png" alt="whatsapp"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contacto -->
+        <div class="contacto">
+            <h2>Contactanos</h2>
+            <p>¿Consultas? ¿Reclamos? Dejanos tu inquietud en el siguiente formulario:</p>
+            <div class="contacto__form">
+                <form action="">
+                    <div class="contacto__form__campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div class="contacto__form__campo">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="">
+                    </div>
+                    <div class="contacto__form__campo">
+                        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="contacto__form__campo">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+
+            <h2>Ubicación</h2>
+            <div class="contacto__mapa">
+                <p>Estamos en Directorio 2651</p>
+                <iframe class="contacto__mapa__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8054275849636!2d-58.46643718550899!3d-34.634356966625425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9876c6cacfd%3A0x3fdd50a837994213!2sAv.%20Directorio%202651%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657838213242!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- div redundante para compatibilidad futura -->
+        <div class="footer">
+            <!-- mapa del sitio -->
+            <div class="footer__navegar">
+                <h3>Mapa del sitio</h3>
+                <ul>
+                    <li><a href="../pages/nosotros.html">Quienes somos</a></li>
+                    <li><a href="../pages/productos.html">Menú</a></li>
+                    <li><a href="../pages/delivery.html">Delivery</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Menu -->
+            <div class="footer__menu">
+                <h3>Nuestro menú:</h3>
+                <ul>
+                    <li><a href="../pages/productos.html#pizzas">Pizzas</a></li>
+                    <li><a href="../pages/productos.html#empanadas">Empanadas</a></li>
+                    <li><a href="../pages/productos.html#calzones">Calzones</a></li>
+                </ul>
+            </div>
+
+            <!-- Ubicacion -->
+            <div class="footer__ubicacion">
+                <h3>Ubicación</h3>
+                <p><a href="https://goo.gl/maps/Z4KRaKL98jeBEW3K9" target="_blank">Av. Directorio 2651</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
