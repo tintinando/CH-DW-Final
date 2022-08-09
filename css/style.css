@@ -1,199 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Roboto:ital@0;1&display=swap');
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
-*{
-    margin:0;
+/* Clases propias precedidas por o_ */
+
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    display:none;
+body {
+    background: rgb(51, 52, 22);
+    background: linear-gradient(180deg, rgba(51, 52, 22, 1) 0%, rgba(88, 88, 67, 1) 50%, rgba(105, 86, 43, 1) 100%);
+    color:rgb(60,50,50);
 }
 
-body{
-    background-color:#a6a6a8;
+h1 {
+    display: none;
 }
 
-nav{
-width:100%;
-height:200px;
-background-color: #cecece;
-padding-bottom: 15px;
+nav .nav-item a {
+    font-size: 1.5em;
+    margin: 0.5em;
+    color: black !important; /* no me vas a ganar, bootstrap*/
+    text-shadow: 1px 1px 4px white;
 }
 
-.nav__logo{
-    width:100px;
-    height:100px;
-    display: inline;
-}
-
-.nav__logo img{
-    height:100%;
-}
-
-.nav__barra{
-    display: inline;
-}
-
-.nav__barra ul{
-    list-style-type: none;
-    width:50%;
-    display: inline;
-    position:relative;
-    top:-40px;
-    left:100px;
-}
-
-.nav__barra ul li{
-    display: inline;
-}
-
-.nav__barra ul li a{
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    padding:15px;
-    margin:10px;
-    display:inline;
-    width:60px;
-    font-family: roboto;
-    font-weight: 600;
-    text-align: center;
-
-}
-.nav__rsocial{
-    width:200px;
-    height:70px;
-    float: right;
+/* logo */
+.navbar-brand{
+    width: 20%;
     position: relative;
-    top:100px;
 }
 
-.nav__rsocial img{
-    width:70px;
-    height: 70px;
-    margin:10px;
+.navbar-brand img {
+    width: 100%;
 }
 
-/* Main inicio */
-.main__banner{
-    width:90%;
-    margin-left: 5%;
+.navbar-brand span{
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    text-align: center;
+    font-family: "mouse memoirs";
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    text-shadow: 0 0 0;
+    animation: tioShadow 0.7s ease-in-out infinite alternate;
 }
 
-.main__banner img{
-    width:100%;
+@keyframes tioShadow {
+    from{
+        text-shadow: 0 0 1px yellow, 0 0 1px orange;
+    }
+    to{
+        text-shadow: 0 0 5px yellow, 0 0 15px orange;
+    }
 }
 
-.main__cards{
-    display: block;
-    width:70%;
-    margin-left: 15%;
-    height: 200px;
-}
-
-.main__card{
-    display: inline;
-}
-
-.main__card img{
-    height: 100%;
-}
-
-
-/* Pie de página */
-.footer{
-    background-color:#cecece;
-    width:100%;
-    height:200px;
-    display: block;
-    float: none;
-}
-
-.footer__navegar{
-    margin-top: 40px;
-    margin-left: 80px;
-    height:100%;
-    width:25%;
-    float:left;
-}
-
-.footer__navegar h3{
-    color:rgb(73, 17, 17);
-    font-family: roboto;
-}
-.footer__navegar ul{
-    list-style-type: none;
-}
-
-.footer__navegar ul li a, .footer__navegar a {
+nav .o_rsocial li a {
     text-decoration: none;
-    color:black;
-    font-family: roboto;
+    font-size: 3rem;
+    margin: 10px;
 }
 
-/* Nosotros.html */
-.nosotros{
-    width:80%;
-    height:400px;
-    margin-left: 10%;
-    background-color: #b1e5f2;
+/* Carrusel hero */
+main div:first-child {
+    height: 100vh;
 }
 
-.nosotros__texto{
-    width:50%;
-    float:left;
-    padding:20px;
-    font-family: cabin;
+/* Tarjetas de fotos */
+main .o_main__cards {
+    width: 100%;
+    height: 300px;
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: hidden;
 }
 
-.nosotros__img{
-    height:100%;
-    float:left;
+main .o_main__cards img {
+    height: 90%;
+    object-fit: cover;
+    box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
-.nosotros__img img{
-    height:100%;
+/* Footer */
+footer .o_footer{
+    margin: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
-/* productos.html */
-.productos__cards{
-    width:100%;
-    float:left;
-    margin:10px;
+footer .o_footer h3{
+    font-size: 2em;
 }
 
-.productos__cards h2{
-    font-family: cabin;
+footer .o_footer ul{
+    list-style:square;
 }
 
-.productos__card{
-    float:left;
-    width:20%;
-    margin-left:10px;
-    font-family: cabin;
-}
-.productos__card img{
-    height:100%;
-    width:100%;
+footer .o_footer a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: inherit;
 }
 
-/* delivery.html */
-.delivery{
-    width:80%;
-    margin:15px;
+/* ------ PÁGINAS SECUNDARIAS ------ */
+/* Nosotros */
+.o_nosotros{
+    margin:2rem;
+    color:white;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.delivery h2,.delivery p{
-    font-family: cabin;
+.o_nosotros div:first-child{
+    padding:2rem 4rem;
 }
 
-.delivery__card{
-   width:30%;
-   margin:20px;
+.o_nosotros img{
+    width: 50vh;
 }
 
-.delivery__card img{
-    max-width:100%;
-    max-height: 100%;
+/* Productos */
+.o_productos_hero{
+    margin: 2rem;
+    color:white;
 }
 
+.o_productos{
+    margin: 2rem;
+    color: white;
+}
+
+.o_productos_gallery{
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 24rem;
+    gap:2rem;
+    align-items: baseline;
+}
+
+.o_productos__card{
+    position: relative;
+}
+
+.o_productos__card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.o_productos__card h3{
+    font-size: 1.4em;
+}
+
+/* ------ DELIVERY ------ */
+.o_delivery{
+    margin: 2rem;
+    color:white;
+    text-shadow: 1px 1px #333333;
+}
+
+.o_delivery_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+}
+
+.o_delivery_container img{
+    width: 30%;
+    object-fit: contain;
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media screen and (max-width:900px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 10px;
+    }
+}
