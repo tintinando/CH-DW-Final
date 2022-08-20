@@ -1,0 +1,32 @@
+main {
+    .carousel-inner {
+        height: 45rem;
+    }
+
+    .carousel-item {
+        height: 100%;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // Tarjetas de fotos
+    .o_main__cards {
+        margin: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .o_main__cards img {
+        width: 20rem;
+        height: 24rem;
+        object-fit: cover;
+        box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    }
+}

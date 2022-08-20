@@ -1,0 +1,36 @@
+/* Footer */
+footer {
+    .o_footer {
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.o_autor {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    a {
+        text-decoration: none;
+        color: #999999;
+    }
+}

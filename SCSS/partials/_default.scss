@@ -1,0 +1,21 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+/* Clases propias precedidas por o_ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(51, 52, 22);
+    background: linear-gradient(180deg, rgba(51, 52, 22, 1) 0%, rgba(88, 88, 67, 1) 50%, rgba(105, 86, 43, 1) 100%);
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+h1 {
+    display: none;
+}
