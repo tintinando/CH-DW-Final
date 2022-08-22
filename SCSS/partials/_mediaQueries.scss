@@ -78,8 +78,12 @@
         align-items: flex-start;
     }
 
-    .contacto iframe{
-        width: 95%;
+    .contacto{
+        margin: 2em;
+    }
+
+    .contacto__mapa iframe{
+        width: 85vw;
         height: 50vh;
     }
 }
@@ -98,5 +102,9 @@
 
     .o_productos_gallery{
         grid-template-columns: 1fr;
+    }
+
+    .contacto__mapa iframe{
+        height: 35vh;
     }
 }

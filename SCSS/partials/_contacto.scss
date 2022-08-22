@@ -9,8 +9,7 @@
         font-size: 1.4rem;
     }
 
-    form,
-    iframe {
+    form {
         width: 100%;
         padding: 2rem;
     }
@@ -37,4 +36,8 @@
     form textarea {
         height: 10rem;
     }
+}
+
+.contacto__mapa iframe{
+    width: 80vw;
 }

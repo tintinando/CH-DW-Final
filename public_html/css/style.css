@@ -134,6 +134,54 @@ footer .o_footer {
     height: 30rem;
     margin: 2rem; }
 
+.contacto {
+  width: 65%;
+  margin: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .contacto p {
+    font-size: 1.4rem; }
+  .contacto form {
+    width: 100%;
+    padding: 2rem; }
+  .contacto form input,
+  .contacto textarea {
+    width: 100%;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+    border: 2px solid #2e2e20;
+    box-shadow: 0.4rem 0.4rem 1rem #27271b; }
+  .contacto form input,
+  .contacto textarea,
+  .contacto input::placeholder,
+  .contacto textarea::placeholder {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    vertical-align: middle; }
+  .contacto form textarea {
+    height: 10rem; }
+
+.contacto__mapa iframe {
+  width: 80vw; }
+
+.o_delivery {
+  margin: 2rem;
+  color: white;
+  text-shadow: 1px 1px #333333; }
+
+.o_delivery_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem; }
+  .o_delivery_container img {
+    width: 30%;
+    object-fit: contain; }
+
 .o_productos_hero {
   margin: 2rem;
   color: white; }
@@ -168,13 +216,15 @@ footer .o_footer {
     box-shadow: 0px 0px 50px 75px rgba(141, 141, 141, 0.15);
     animation: cardNeon 7s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; }
   .o_productos__card img {
+    border-radius: 1rem;
     width: 95%;
     height: 85%;
     object-fit: cover;
     box-shadow: 1em 1em 1em #333333;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    transition: all 0.1s linear; }
     .o_productos__card img:hover {
-      transform: scale(1.05); }
+      transform: scale(1.07);
+      transition: all 4s cubic-bezier(0, 0.2, 0, 1); }
   .o_productos__card h3 {
     position: absolute;
     bottom: 0;
@@ -188,52 +238,6 @@ footer .o_footer {
   100% {
     transform-origin: 50%;
     transform: translate(100%, 2000%) rotate(-45deg); } }
-
-.o_delivery {
-  margin: 2rem;
-  color: white;
-  text-shadow: 1px 1px #333333; }
-
-.o_delivery_container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10rem; }
-  .o_delivery_container img {
-    width: 30%;
-    object-fit: contain; }
-
-.contacto {
-  width: 65%;
-  margin: 4em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-  .contacto p {
-    font-size: 1.4rem; }
-  .contacto form,
-  .contacto iframe {
-    width: 100%;
-    padding: 2rem; }
-  .contacto form input,
-  .contacto textarea {
-    width: 100%;
-    height: 3rem;
-    border-radius: 1.5rem;
-    margin: 0.5rem;
-    border: 2px solid #2e2e20;
-    box-shadow: 0.4rem 0.4rem 1rem #27271b; }
-  .contacto form input,
-  .contacto textarea,
-  .contacto input::placeholder,
-  .contacto textarea::placeholder {
-    font-size: 1.6rem;
-    padding-left: 1rem;
-    vertical-align: middle; }
-  .contacto form textarea {
-    height: 10rem; }
 
 @media screen and (max-width: 1000px) {
   nav .o_rsocial {
@@ -283,8 +287,10 @@ footer .o_footer {
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start; }
-  .contacto iframe {
-    width: 95%;
+  .contacto {
+    margin: 2em; }
+  .contacto__mapa iframe {
+    width: 85vw;
     height: 50vh; } }
 
 @media screen and (max-width: 500px) {
@@ -296,4 +302,6 @@ footer .o_footer {
     width: 10rem;
     height: 14rem; }
   .o_productos_gallery {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .contacto__mapa iframe {
+    height: 35vh; } }

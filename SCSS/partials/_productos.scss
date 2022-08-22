@@ -40,14 +40,16 @@
     }
 
     img {
+        border-radius: 1rem;;
         width: 95%;
         height: 85%;
         object-fit: cover;
         box-shadow: 1em 1em 1em #333333;
-        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-
+        transition: all 0.1s linear;
+        
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.07);
+            transition: all 4s cubic-bezier(0, 0.2, 0, 1);
         }
     }
 
