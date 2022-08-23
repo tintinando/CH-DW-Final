@@ -8,20 +8,23 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/124b2a5362.js" crossorigin="anonymous"></script>
     <!-- CSS propio -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Pizzería El tío Héctor | La mejor pizzería de Buenos Aires</title>
-    <meta name="description" content="Somos una pizzería familiar ubicada en Buenos Aires. Nos especializamos en pizza a la piedra. Fundada en 2005. Atendida por sus dueños">
+    <meta name="description"
+        content="Somos una pizzería familiar ubicada en Buenos Aires. Nos especializamos en pizza a la piedra. Fundada en 2005. Atendida por sus dueños">
     <meta name="keywords" content="pizza, empanadas, restaurante, bar, cerveza, encuentros, buenos aires">
-     <!-- Protocolo open graph -->
-    <meta property="og:type" content="">
-    <meta property="og:title" content="SEO | posicionamiento de buscadores web">
-    <meta property="og:url" content="https://www.mipaginaweb.com.ar">
-    <meta propery="og:imagen" content="https://mipaginaweb.com.ar/asset/ogimage.png">
-    <meta property="og:description" content="Somos una pizzería familiar ubicada en Buenos Aires. Nos especializamos en pizza a la piedra. Fundada en 2005. Atendida por sus dueños">
+    <!-- Protocolo open graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pizzería El tío Héctor | La mejor pizzería de Buenos Aires">
+    <meta property="og:url" content="https://tintinando.github.io/CH-DW-Final/public_html/">
+    <meta propery="og:imagen" content="https://tintinando.github.io/CH-DW-Final/public_html/img/logo-copia.png">
+    <meta property="og:description"
+        content="Somos una pizzería familiar ubicada en Buenos Aires. Nos especializamos en pizza a la piedra. Fundada en 2005. Atendida por sus dueños">
 </head>
 
 <body>
@@ -33,7 +36,7 @@
                 <!-- logo -->
                 <div class="navbar-brand">
                     <a href="./index.html"><img src="./img/logo.png" alt="logo pizzería el tío héctor">
-                    <span>EL TÍO<br>HÉCTOR</span></a>
+                        <span>EL TÍO<br>HÉCTOR</span></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -93,29 +96,38 @@
         <section id="o_hero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
             <div id="o_hero_inner" class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/hero.jpg" class="d-block w-100" alt="pizza a la piedra">
+                    <img src="./img/hero.jpg" class="d-block w-100 img-fluid" alt="pizza a la piedra">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/hero2.jpg" class="d-block w-100" alt="pizza calabresa">
+                    <img src="./img/hero2.jpg" class="d-block w-100 img-fluid" alt="pizza calabresa">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/hero3.jpg" class="d-block w-100" alt="porción de pizza calabresa">
+                    <img src="./img/hero3.jpg" class="d-block w-100 img-fluid" alt="porción de pizza calabresa">
                 </div>
             </div>
         </section>
 
         <!-- Tarjetas de fotos -->
         <section class="o_main__cards">
-            <img src="./img/card1.jpg" alt="empanada jamón y queso cruda">
-            <img src="./img/card2.jpg" alt="empanada de carne">
-            <img src="./img/card3.jpg" alt="calzone napolitano">
+            <div>
+                <img src="./img/card1.jpg" alt="empanada jamón y queso cruda">
+                <div><span>Nuestras pizzas están hechas con fermentación lenta y horno a 300 grados</span></div>
+            </div>
+            <div>
+                <img src="./img/card2.jpg" alt="empanada de carne">
+                <div><span>Nuestras empanadas tienen abundante relleno</span></div>
+            </div>
+            <div>
+                <img src="./img/card3.jpg" alt="calzone napolitano">
+                <div><span>Nuestros calzones tienen ese toque especial que le hace tener un increíble sabor</span></div>
+            </div>
         </section>
     </main>
 
     <!-- Pie de página -->
     <footer>
         <!-- mapa del sitio -->
-        <div class="o_footer">
+        <section class="o_footer">
             <div class="footer__navegar">
                 <h3>Mapa del sitio</h3>
                 <ul>
@@ -139,14 +151,16 @@
                 <h3>Ubicación</h3>
                 <a href="https://goo.gl/maps/Z4KRaKL98jeBEW3K9" target="_blank">Av. Directorio 2651</a>
             </div>
-        </div>
+        </section>
         <section class="o_autor">
             <span>2022 Creada por Tin</span>
             <span><a href="https://www.flaticon.es/iconos-gratis/pizza" title="pizza iconos">Pizza iconos creados por
                     BZZRINCANTATION - Flaticon</a></span>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
