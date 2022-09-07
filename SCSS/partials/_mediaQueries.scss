@@ -2,11 +2,23 @@
     main .o_main__cards {
         margin: 2rem;
     }
+
+    nav .navbar-brand span {
+        font-size: 2vw;
+        line-height: 1.8vw;
+    }
 }
 
-@media screen and (max-width:1000px) {
-    nav .o_rsocial {
-        flex-direction: row;
+@media screen and (max-width:990px) {
+    nav {
+        .o_rsocial {
+            flex-direction: row;
+        }
+
+        .navbar-brand span {
+            font-size: 5vw;
+            line-height: 4.5vw;
+        }
     }
 
     main .o_main__cards {
@@ -18,7 +30,6 @@
         }
     }
 }
-
 
 @media screen and (max-width:900px) {
     html {

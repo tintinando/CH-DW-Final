@@ -1,4 +1,8 @@
 nav {
+    .navbar{
+        display:none;
+    }
+    
     .nav-item a {
         font-size: 1.5em;
         margin: 0.5em;
@@ -6,7 +10,7 @@ nav {
     }
 
     .navbar-brand {
-        width: 20%;
+        width: 30%;
         position: relative;
 
         img {
@@ -21,9 +25,9 @@ nav {
             color: black;
             text-align: center;
             font-family: "mouse memoirs";
-            font-size: 1.7rem;
+            font-size: 3.5vw; // unidad extraña pero facilita responsive
             font-weight: 600;
-            line-height: 1.8rem;
+            line-height: 3.2vw;
             text-shadow: 0 0 0;
             animation: tioShadow 0.7s ease-in-out infinite alternate;
         }
@@ -35,7 +39,7 @@ nav {
         }
 
         to {
-            text-shadow: 0 0 5px yellow, 0 0 15px orange;
+            text-shadow: 0 0 10px yellow, 0 0 15px orange;
         }
     }
 

@@ -1,12 +1,12 @@
 /* Footer */
 footer {
-    .o_footer {
-        width: 100vw;
+    .o_footer {        
         padding: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
+        background: rgba(0, 0, 0, 0.5);
 
         h3 {
             font-size: 2rem;
